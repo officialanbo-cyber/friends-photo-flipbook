@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#514052" />
+    <title>我们在一起的时候 · 朋友画册</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="room">
+      <header class="book-header">
+        <span>Our little archive</span>
+        <h1>我们在一起的时候</h1>
+        <span id="orientation">双页展开</span>
+      </header>
+
+      <section class="stage" aria-label="可交互翻页朋友画册">
+        <div class="book-rig">
+          <div id="book" class="book" data-page-width="471" data-page-height="640">
+            <article class="book-page artwork-page" data-density="hard" aria-label="封面">
+              <img src="assets/pages/leaf-00-right.jpg" alt="我们在一起的时候，朋友画册封面" />
+            </article>
+            <article class="book-page artwork-page" aria-label="开篇文字">
+              <img src="assets/pages/leaf-01-left.jpg" alt="把笑声留在每一次快门之后" />
+            </article>
+            <article class="book-page artwork-page" aria-label="生日合照">
+              <img src="assets/pages/leaf-01-right.jpg" alt="朋友们与生日蛋糕合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="三人合照">
+              <img src="assets/pages/leaf-02-left.jpg" alt="三位朋友的合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="爱心手势合照">
+              <img src="assets/pages/leaf-02-right.jpg" alt="朋友们做爱心手势" />
+            </article>
+            <article class="book-page artwork-page" aria-label="近距离合照一">
+              <img src="assets/pages/leaf-03-left.jpg" alt="两位朋友的近距离合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="近距离合照二">
+              <img src="assets/pages/leaf-03-right.jpg" alt="紫色光线下的朋友合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="路上的合照">
+              <img src="assets/pages/leaf-04-left.jpg" alt="路上的朋友合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="拍立得回忆">
+              <img src="assets/pages/leaf-04-right.jpg" alt="三张朋友拍立得照片" />
+            </article>
+            <article class="book-page artwork-page" aria-label="搞怪合照一">
+              <img src="assets/pages/leaf-05-left.jpg" alt="朋友们使用胡子滤镜搞怪合照" />
+            </article>
+            <article class="book-page artwork-page" aria-label="搞怪合照二">
+              <img src="assets/pages/leaf-05-right.jpg" alt="朋友们使用变形滤镜搞怪合照" />
+            </article>
+            <article class="book-page artwork-page" data-density="hard" aria-label="封底">
+              <img src="assets/pages/leaf-00-left.jpg" alt="朋友画册封底" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="controls" aria-label="画册控制">
+        <button id="previous" type="button" aria-label="上一页">&larr;</button>
+        <div class="status" aria-live="polite">
+          <span id="page-status">封面</span>
+          <small>拖动、轻扫、点击页角，或使用方向键</small>
+        </div>
+        <button id="next" type="button" aria-label="下一页">&rarr;</button>
+      </footer>
+    </main>
+
+    <script src="vendor/page-flip.browser.js"></script>
+    <script src="flipbook.js"></script>
+  </body>
+</html>
